@@ -1,0 +1,42 @@
+@charset "UTF-8"; /* regra*/
+@font-face {
+    font-family: 'caramel';
+    src: url(fontes/Caramel\ and\ Vanilla.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+        Tipos de format ()
+        - opentype (otf)
+        -truetype (ttf)
+        -embedded-opentype
+        -truetype-aat (Apple Advanced Typografy)
+        -svg
+    
+    */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #6ac3ff, #b6f2ff );
+}
+main {
+    background-color: #ffffff;
+    width: 700px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #407aa0;
+    margin: auto;
+}
+h1 {
+    font-family: 'caramel', Times, serif;
+    font-size: 5em;
+    color: #B0631E;
+    font-weight: normal;
+}
+h2 {
+    color: #B0631E;
+}
+
+p {
+    text-align: justify;
+
+}

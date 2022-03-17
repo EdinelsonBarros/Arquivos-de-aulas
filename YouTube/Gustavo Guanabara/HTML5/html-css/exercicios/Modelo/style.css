@@ -2,10 +2,10 @@
 
 *{
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+    
 }
 body {
-    background-image: linear-gradient(to right, #0B2B40, #30A5BF );
+    background-image: linear-gradient(to right, #a4dbff, #30A5BF );
 }
 
 p {
