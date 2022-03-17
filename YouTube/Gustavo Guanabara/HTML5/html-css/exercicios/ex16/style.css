@@ -1,29 +1,31 @@
 @charset "UTF-8";
-* {
+
+*{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
 }
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    background-image: linear-gradient(to right, #BAC3F0, #fac7af);
+    background-image: linear-gradient(to right, #3ba9f3, #7de7ff );
 }
 main {
+    
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 3px 3px 10px #5d2a42c0;
-    margin: auto;
+    box-shadow: 5px 5px 15px #257d91d2;
     width: 600px;
     padding: 20px;
+    margin: auto;
 }
 h1 {
+    color: #0B2B40;
     text-align: center;
-    color: #5D2A42;
+    text-shadow: 1px 1px 2px #09141d75;
 }
 h2 {
-   color: #FB6376; 
+    color: #F2BE22;
 }
 p {
     text-align: justify;
+
 }
