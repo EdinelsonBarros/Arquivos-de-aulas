@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-image: linear-gradient(90deg, #fdb6b6, #e894fd, #fdc67f);
+        }
+        main {
+            background-color: white;
+            width: 800px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px #794747;
+            padding: 20px;
+            margin: auto;
+        }
+
+    </style>
+    <title>Primeiros passos com o DOM</title>
+</head>
+<body>
+    <main>
+        <h1>Iniciando estudo com o DOM</h1>
+        <h2 id="2">Vasmos aprender mais um pouco</h2>
+        <p id="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit ea quia enim culpa consequuntur, dolores provident iste, sint sed ex nesciunt cupiditate id voluptatum aliquam vero laudantium facilis a! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui itaque tenetur assumenda sint magni, labore voluptatem eligendi, dolor temporibus veritatis quasi eius esse ducimus soluta, omnis eos reprehenderit ullam aliquid! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia illum eaque perspiciatis, necessitatibus exercitationem expedita dolorum soluta assumenda repellendus sed possimus doloremque cupiditate nesciunt, maxime ipsa illo. Sequi, assumenda impedit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officia nisi dolorum laboriosam, expedita mollitia, aliquam repudiandae laborum eum tempore earum soluta quidem. Corrupti eum culpa magni, sed explicabo consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe nisi nostrum similique odit recusandae accusamus et dolorem! Officiis in laboriosam magnam eaque quae? Blanditiis nam possimus optio beatae incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut culpa hic doloremque minus vel possimus rerum dolore doloribus voluptates eaque, voluptatum, voluptatem necessitatibus dignissimos tempore molestiae porro? Quis, consectetur.</p>
+        <h2 id="point">Vamos aprender mais</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda enim voluptatem amet, praesentium fuga unde tenetur magni inventore sit dolorum nihil exercitationem, nobis ex perferendis tempora. Fuga nemo cumque dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aperiam nemo perspiciatis accusamus quae, explicabo ea in, sint reiciendis nesciunt minus corrupti maxime nihil fuga incidunt cumque. Accusamus, eaque fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit exercitationem debitis eligendi minima, eaque autem quis dolorem incidunt placeat nemo aperiam minus. Veritatis, eligendi dolorum debitis provident quae quisquam vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestias nemo fugiat excepturi corrupti alias sint aut repellendus explicabo soluta ex illum consequuntur aliquid iusto voluptate possimus atque, obcaecati animi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis odit aperiam, debitis inventore animi a tenetur recusandae reprehenderit! Asperiores quos quas inventore unde illum voluptatem veritatis, itaque minus nemo quis!</p>
+        <h2>Vamos aprender mais</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur aliquam, vero reiciendis omnis debitis natus quos error tempora voluptatibus accusantium accusamus expedita ullam nostrum in sed dolorem tenetur explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia expedita, illo dolor explicabo sequi in debitis optio modi rem, adipisci quidem ipsam eum aspernatur inventore suscipit rerum et, nihil consectetur.</p>
+        <h2>Vamos aprender mais</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, id rerum libero dolore illo rem? Eaque deserunt libero optio odio reprehenderit. Neque optio mollitia repellendus exercitationem alias officia rerum illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus, magni, ut suscipit voluptates, sunt vel neque accusantium non explicabo aliquam aliquid ipsa modi ratione expedita incidunt assumenda magnam hic?</p>
+    </main>
+    <!--Praticando modificação em tags HTML com Js-->
+    <script>
+        let corpo = document.body
+        corpo.style.background = 'pink' /* a cor do background foi modificada*/
+        let titulo = document.getElementsByTagName('h1') [0]
+        titulo.style.background = 'yellow'
+        titulo.style.padding = '10px'
+        titulo.style.borderRadius = '10px'
+
+        let subt = document.getElementById('2')
+        subt.style.background = 'green'
+        subt.style.padding = '10px'
+        subt.style.borderRadius = '10px'
+
+        let paraf = document.getElementById ('3')
+        paraf.style.background = '#e894fd'
+        paraf.style.padding = '10px'
+        
+        let paraf1 = document.getElementsByTagName('p') [1]
+        paraf1.style.background = 'yellow'
+        paraf1.style.padding = '10px'
+
+        let subt1 = document.querySelector('h2#point')
+        subt1.style.background = 'green'
+        subt1.style.color = 'white'
+        subt1.style.padding = '5px'
+        subt1.style.borderRadius= '5px'
+
+        let paraf2 = document.querySelectorAll('p')[2]
+        paraf2.style.background = '#e894fd'
+        paraf2.style.padding = '10px'
+        paraf2.style.borderRadius = '10px'
+
+        let paraf4 = document.querySelectorAll('p')[4]
+        paraf4.innerHTML = 'Subtituição de texto por JavaScript.'
+        paraf4.style.background = 'green'
+        
+    </script>
+    
+</body>
+</html>
