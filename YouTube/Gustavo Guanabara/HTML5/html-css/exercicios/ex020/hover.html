@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="web.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #d1e4fd, #a0c8fd);
+        }
+        div#es > p{
+            display: none; /* Escondeu o texto*/
+        }
+        div#es:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div#es:hover { /* Modifica a cor do texto ao passar o mouse*/
+            color: rgb(243, 42, 42);
+        }
+        div#menu > p {
+            display: none;
+        }
+        div#menu:hover > p {
+            display: block;
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            padding: 5px;
+            text-align: center;
+        }
+
+
+    </style>
+    <title>Exemplo de hover</title>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p> Passe o mouse sobre o texto abaixo</p>
+    <div id="es"> Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo.</p>
+    <div id="menu">MENU
+        <p><a href="ex020.html">ex020</a></p>
+    </div>
+</body>
+</html>
