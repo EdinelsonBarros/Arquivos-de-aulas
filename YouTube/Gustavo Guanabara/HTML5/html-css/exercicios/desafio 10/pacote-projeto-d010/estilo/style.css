@@ -21,6 +21,10 @@
     --fonte-android: 'Android', cursive;
 
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
@@ -29,9 +33,17 @@ header {
     background-color: var(--cor4);
 }
 header > h1 {
-    color: var(--cor3);
-    font-family: var(--font-destaque);
-    
+    color: white;
+    font-family: var(--font-destaque);    
+}
+header > p {
+    color: white;
+}
+nav {
+    background-color: var(--cor5);
+}
+main {
+    background-color: white;
 }
 main h1 {
     color: var(--cor3);
@@ -39,4 +51,8 @@ main h1 {
 }
 main h2 {
     font-family: var(--fonte-android);
+}
+footer {
+    background-color: var(--cor5);
+    color: white;
 }
