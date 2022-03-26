@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --midlle-blue: #80CED7;
+            --powder-blue: #9AD1D4;
+            --gains-boro:  #CCDBDC;
+        }
+        body {
+            background-color: var(--gains-boro);
+            color: black;
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: var(--midlle-blue);
+            margin: 0px;
+            padding: 15px;
+        }
+        header > h1 {
+            color: white;
+        }
+        nav {
+            background-color: var(--powder-blue);
+            padding: 5px;
+        }
+        
+        .calculo {
+            background-color: white;
+            width: 400px;
+            height: 200px;
+            margin: 20px auto 0px auto;
+            border-radius: 20px;
+        }
+        div > h2 {
+            color: #000000;
+            padding-top: 10px;
+        }
+        .button {
+            color: white;
+            background-color: red;
+            margin-top: 20px;
+            border: none;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    </style>
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+        <p>Calcule tudo que você quiser aqui.</p>
+            
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Serviços</a>
+        <a href="#">Blog</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+
+
+    </nav>
+    <main>
+        <article>
+            <div class="calculo">
+                <h2>Adição</h2>
+                <input type="number" name="soma1" id="soma1"> +
+                <input type="number" name="soma2" id="soma2">
+                <input type="button" value="Somar" onclick="somar()" class="button">
+                <div id="somares"></div>
+            </div>
+            <div class="calculo">
+                <h2>Subtração</h2>
+                <input type="number" name="sub1" id="sub1"> -
+                <input type="number" name="sub2" id="sub2">
+                <input type="button" value="Subtrair" onclick="subtrair()" class="button">
+                <div id="subres"></div>
+            </div>
+            <div class="calculo">
+                <h2>Multiplicação</h2>
+                <input type="number" name="mul1" id="mul1"> *
+                <input type="number" name="mul2" id="mul2">
+                <input type="button" value="Multiplicar" onclick="multiplicar()" class="button">
+                <div id="mulres"></div>
+            </div>
+            <div class="calculo"> 
+                <h2>Divisão</h2>
+                <input type="number" name="divs1" id="divs1"> /
+                <input type="number" name="divs2" id="divs2">
+                <input type="button" value="Dividir" onclick="dividir()" class="button">
+                <div id="divsres"></div>
+            </div>
+            <aside>
+
+            </aside>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function somar(){
+        
+        let soma1 = document.getElementById('soma1')
+        let soma2 = document.getElementById('soma2')
+        let somares = document.querySelector('div#somares')
+        
+        let s1 = Number(soma1.value)
+        let s2 = Number(soma2.value)
+        let res = s1 + s2
+        somares.innerHTML = `O resultado da soma entre ${s1} e ${s2} é ${res}`        
+        }
+        
+        function subtrair(){
+        
+        let sub1 = document.getElementById('sub1')
+        let sub2 = document.getElementById('sub2')
+        let subres = document.querySelector('div#subres')
+        
+        let sb1 = Number(sub1.value)
+        let sb2 = Number(sub2.value)
+        let sres = sb1 - sb2
+        subres.innerHTML = `O resultado da subtração entre ${sb1} e ${sb2} é ${sres}`        
+        }
+
+        function multiplicar(){
+        
+        let mul1 = document.getElementById('mul1')
+        let mul2 = document.getElementById('mul2')
+        let mulres = document.querySelector('div#mulres')
+        
+        let m1 = Number(mul1.value)
+        let m2 = Number(mul2.value)
+        let mres = m1 * m2
+        mulres.innerHTML = `O resultado da subtração entre ${m1} e ${m2} é ${mres}`        
+        }       
+        
+        function dividir(){
+        
+        let divs1 = document.getElementById('divs1')
+        let divs2 = document.getElementById('divs2')
+        let divsres = document.querySelector('div#divsres')
+        
+        let d1 = Number(divs1.value)
+        let d2 = Number(divs2.value)
+        let dres = d1 / d2
+        divsres.innerHTML = `O resultado da subtração entre ${d1} e ${d2} é ${dres}`        
+        }
+
+    </script>
+</body>
+</html>
