@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @font-face {
+            font-family: 'crete';
+            src: url(fontes/Crete_Round/CreteRound-Regular.ttf) format('opentype');
+        }
+
         :root {
             --midlle-blue: #80CED7;
             --powder-blue: #9AD1D4;
             --gains-boro:  #CCDBDC;
+            --font-h1: 'crete';
         }
         body {
             background-color: var(--gains-boro);
@@ -19,11 +25,17 @@
         }
         header {
             background-color: var(--midlle-blue);
-            margin: 0px;
-            padding: 15px;
+            
+            padding: 12px;
         }
         header > h1 {
+            font-family: var(--font-h1);
+            font-size: 3em;
             color: white;
+            margin: 0px auto ;
+        }
+        header > p {
+            margin: 0px;
         }
         nav {
             background-color: var(--powder-blue);
