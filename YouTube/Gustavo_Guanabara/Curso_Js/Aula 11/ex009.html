@@ -23,21 +23,22 @@
     Em qual país você nasceu?: <input type="text" name="born" id="born">
     <input type="button" value="Verificar" onclick="verificar()">
     
-    <div id="re">
-
+    <div id="res">
     </div>
+    
     <script>
         function verificar() {
-            var país = window.document.querySelector('input#born')
-            if (país == 'Brasil') 
-            {
-            re.innerHTML = `Você é brasileiro`
-            } 
-            else {
-            re.innerHTML = `Você é estrangeiro`
+            let nacionalidade = document.getElementById('born')
+            let res = document.getElementById('res')
+            if (nacionalidade == brasil) {
+                res.innerHTML = `Você é brasileiro.`
+            } else {
+                res.innerHTML = `Você é estrangeiro.`
             }
+           
         }
-            
+        
+        
                 
          
     /*var país = 'China'
