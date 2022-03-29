@@ -1,10 +1,10 @@
-Guia para usar o TERMINAL
+# Guia para usar o TERMINAL
 
-Para abrir o terminal
+### Para abrir o terminal
 
 windows + r e digite: powershell
 
-Digite dir > para ver o que tem na pasta
+### Digite dir > para ver o que tem na pasta
 
 Para entrar uma basta digite cd + tecle espaço e 
 digite o nome da pasta
