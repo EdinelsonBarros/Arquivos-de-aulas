@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Staatliches&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, tahoma, sans-serif;
+    --font2:  'Staatliches', cursive;
+    --font3: 'Satisfy', cursive;
+}
+
 * {
   margin: 0px;  
   padding: 0px;
@@ -11,15 +21,55 @@ html, body {
 
 }
 header {
+    font-family: var(--font2);
+    
     background-color: black;
     color: white;
     text-align: center;
 }
 header > h1 {
+    font-size: 4em;
     padding-top: 50px;
     font-variant: small-caps;
     /* text-transform: uppercase;*/
 }
 header > p {
     padding-bottom: 50px;
+    font-size: 1.5em;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+ section {
+     padding-top: 10vh;
+     padding-bottom: 10vh;
+     line-height: 2em;
+     padding-left: 30px;
+     font-family: var(--font3);
+     font-size: 1.8em;
+ }
+section.normal {
+    background-color: white;
+}
+section.imagem{
+    background-color: antiquewhite;
+    color: white;
+}
+.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.333);
+}
+
+footer {
+    font-family: var(--font1);
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
 }
