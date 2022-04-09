@@ -27,9 +27,10 @@
     </div>
     
     <script>
-        function verificar() {
-            let nacionalidade = document.getElementById('born')
+        let nacionalidade = document.getElementById('born')
             let res = document.getElementById('res')
+        function verificar() {
+            
             if (nacionalidade == brasil) {
                 res.innerHTML = `Você é brasileiro.`
             } else {
