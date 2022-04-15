@@ -4,5 +4,6 @@
          console.log(valorEmReais)
 }
 
-valorDecimal(0.1 + 0.2)
-//console.log(conversaoMoeda(0.1, 0.2))
+formatarValorDecimal(0.1 + 0.2)
+
+
