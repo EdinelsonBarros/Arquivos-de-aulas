@@ -1,0 +1,4 @@
+// Array é utilizado para armazenar vários valores em uma mesma variável
+
+const carros = ["UNO", "SAVEIRO", "GOL", "HILUX", "HB20"]
+// Indices dos elementos começam em '0'.
