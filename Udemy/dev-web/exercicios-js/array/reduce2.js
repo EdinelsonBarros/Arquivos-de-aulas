@@ -1,14 +1,15 @@
 const alunos = [
-    {nome: 'Edinelson', nota: 7},
-    {nome: 'Lídia', nota: 10},
-    {nome: 'Daniel', nota: 8},
-    {nome: 'João', nota: 6},
-    {nome: 'Mauricio', nota: 4},
-    {nome: 'Carlos', nota: 9},
-    {nome: 'Maria', nota: 8.5}
-
+    {nome: "João", nota: 7.3, bolsista: false},
+    {nome: "Claudio", nota: 9.2, bolsista: true},
+    {nome: "Pedro", nota: 9.8, bolsista: true},
+    {nome: "Ana", nota: 8.7, bolsita: true}
 ]
 
-// desafio 1: Todos os alunos são bolsista?
-const bolsistastodos = (resultado, bolsista) => resultado && bolsista
-console.log(alunos.map(a => a.bolsista).reduce(bolsistastodos))
+
+// Desafio 1: Todos os alunos são bolsitas
+const todosBolsistas = (resultado, bolsista) => resultado && bolsista
+console.log(alunos.map(a => a.bolsista).reduce(todosBolsistas))
+
+// Desafio 2: Algum aluno é bolsista?
+const algumBolsista = (resultado, bolsista) => resultado || bolsista
+console.log(alunos.map(a => a.bolsista).reduce(algumBolsista))
