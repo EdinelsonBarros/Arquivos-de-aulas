@@ -4,9 +4,9 @@
 
 windows + r e digite: powershell
 
-### Digite dir > para ver o que tem na pasta
+ Digite dir > para ver o que tem na pasta
 
-Para entrar uma basta digite cd + tecle espaço e 
+Para entrar uma basta digite cd + espaço e 
 digite o nome da pasta
 
 Para voltar a pasta anterior basta digitar cd..
