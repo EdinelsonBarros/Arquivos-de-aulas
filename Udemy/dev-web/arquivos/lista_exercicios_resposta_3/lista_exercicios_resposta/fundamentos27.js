@@ -24,15 +24,15 @@ function calcularCrescimento(altura1, taxa1, altura2, taxa2) {
     }
 }
 
-function calcularTempo(alturaMenor, taxaAlturaMenor, alturaMaior, taxaAlturaMaior){
+function calcularTempo( alturaMaior, taxaAlturaMaior, alturaMenor, taxaAlturaMenor){
     let qtdAnos = 0
     while (alturaMenor < alturaMaior) {
         alturaMenor += taxaAlturaMenor
         alturaMaior += taxaAlturaMaior
-        qtdAnos++
+         qtdAnos++
     }
     //console.log(qtdAnos)
     return qtdAnos
 }
 
-console.log(calcularCrescimento(150, 2, 130, 4));
+console.log(calcularCrescimento(150, 2, 100, 3));

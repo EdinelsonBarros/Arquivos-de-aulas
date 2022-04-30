@@ -28,7 +28,7 @@ function calcularTempo( alturaEdinelson, taxaEdinelson, alturaLidia, taxaLidia){
     let anos = 0
 
     
-    while(alturaLidia <= alturaEdinelson){
+    while(alturaLidia <= alturaEdinelson || alturaLidia >= alturaEdinelson){
         alturaLidia += taxaLidia
         alturaEdinelson += taxaEdinelson
         anos++
@@ -37,4 +37,4 @@ function calcularTempo( alturaEdinelson, taxaEdinelson, alturaLidia, taxaLidia){
 }
 
 //console.log(calcularTempo(168, 2, 160, 3))
-console.log(calcularCrescimento(168, 1, 168, 2))
+console.log(calcularCrescimento(167, 3, 168, 2))
