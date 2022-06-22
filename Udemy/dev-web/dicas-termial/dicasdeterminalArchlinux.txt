@@ -1,0 +1,18 @@
+Comandos no archlinux
+
+LISTAR PACOTES INSTALADOS
+
+	sudo pacman -Q
+
+SABER EM QUAL DIRETORIO EU ESTOU
+
+	pwd
+
+LISTAR ARQUIVOS OCULTOS
+
+	ls -a
+
+MOSTRAR PERMISSÕES DO DIRETORIOS
+
+	ls -la
+

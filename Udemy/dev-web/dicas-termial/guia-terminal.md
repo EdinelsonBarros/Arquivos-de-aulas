@@ -16,7 +16,7 @@ Para limpar os comandos digite clear ou cls
 Para criar uma pasta basta usar mkdir
 
 Para apagar arquivos basta ditar del+ nome da 
-ou aquivos
+ou arquivos
 
 Para abrir o node basta digitar node ou npm e para fecha-lo
 basta digitar ctrl + C 2 vezes.
