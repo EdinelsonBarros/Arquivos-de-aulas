@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        var pessoa = { nome: {primeiro: 'Edinelson', 
+            ultimo:'Barros'
+    },
+        idade: 26,
+        sexo: 'masculino',
+        interesses: ['programção', 'filosofia', 'design'],
+        bio: function() {console.log(this.nome.primeiro+ ' ' + this.nome.ultimo+ ' tem ' + this.idade+ ' anos de idade. Ele gosta de '+ this.interesses[0] + ', ' +this.interesses[1] + ' e '+this.interesses[2]+ ','); },
+        saudacao: function() { console.log('Ola! Eu sou ' + this.nome[0]+'.'); }};
+    </script>
+</body>
+</html>
+
+
+
