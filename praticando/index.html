@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Operador ternário</title>
+	
+	</head>
+
+	<body>
+		<h1> Quantos anos você tem?</h1>
+		<input type="number" id="idad" value="">
+		<button onclick="cnh()">Verificar</button>
+		<p id="resp"></p>
+		
+		
+	<script>
+		function cnh() {
+		let idade = document.getElementById('idad').value
+		let resultado = ( idade < 18)? "Você não pode dirigir":"Você pode dirigir";
+		let resp = document.getElementById('resp').innerHTML= `${resultado} por que têm ${idade} anos.`
+		
+		
+		}
+	</script>
+	</body>
+
+
+</html>

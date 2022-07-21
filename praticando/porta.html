@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <html lang="pt-br">
+        <head>
+            <style>
+                body {
+                    background-color: #d3d3d3;
+                }
+                .portal{
+                    position: relative;
+                    height: 200px;
+                    width: 200px;
+                    border: solid 10px black;
+                    margin: auto;
+                    background-color: #614343;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                }
+                .marcaneta{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: #3d2727;
+                    float: right;
+                    margin-right: 5px;
+                    margin-top: 80px;
+                }
+            </style>
+        </head>
+        <body>
+            
+            <div class="portal">
+                <div class="marcaneta"></div>
+            </div>
+            <script>
+                m = document.querySelector('.marcaneta')
+                portal = document.querySelector('.portal')
+                m.addEventListener('click', abrir)
+                function abrir() {                  
+                    portal.style.backgroundColor = '#d3d3d3'
+                    portal.innerHTML= 'Seja Bem Vindo!'
+                }
+                
+                
+                
+            </script>
+            
+        </body>
+</html>
