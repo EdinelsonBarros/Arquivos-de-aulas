@@ -1,11 +1,29 @@
 {
-    "users": [{
-        "id":1,
-        "name": "Edineson Lima",
-        "email": "edinelsonl98@gmail.com"
-    },{
-        "id":2,
-        "name": "Lidia Lustosa",
-        "email": "lidialustosadeoliveira@gmail.com"
-    }]
+  "users": [
+    {
+      "id": 1,
+      "name": "Edineson Lima",
+      "email": "edinelsonl98@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Lidia Lustosa",
+      "email": "lidialustosadeoliveira@gmail.com"
+    },
+    {
+      "name": "Edinelson Lima Barros",
+      "email": "edinelsonl98@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": 4
+    },
+    {
+      "name": "Edinelso",
+      "email": "edinelsonlimabarros@gmail.com",
+      "id": 5
+    }
+  ]
 }
