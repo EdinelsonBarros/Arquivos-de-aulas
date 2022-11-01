@@ -5,14 +5,17 @@ import Botao from './Botao'
 
 interface formularioProps {
     cliente: Cliente
+    clienteMudou?: (cliente: Cliente) => void
+    cancelado?: () => void 
 }
 
 export default function Formulario(props: formularioProps) {
     const id = props.cliente?.id
     const [nome, setNome] = useState(props.cliente?.nome ?? '')
-    const [Idade, setIdade] = useState(props.cliente?.idade ?? 0)
+    const [idade, setIdade] = useState(props.cliente?.idade ?? 0)
+
     return(
-        <div className='bg-gray-200 p-5 '>
+        <div className='bg-gray-200 p-5'>
             {id ? (
                 <Entrada 
                 somenteLeitura
@@ -30,14 +33,15 @@ export default function Formulario(props: formularioProps) {
                 <Entrada 
                     texto="Idade" 
                     tipo="number" 
-                    valor={Idade}
+                    valor={idade}
                     valorMudou={setIdade}
                 />
                 <div className='mt-7 flex justify-end'>
-                    <Botao cor="blue" className="mr-2">
+                    <Botao cor="blue" className="mr-2"
+                    onClick={() => props.clienteMudou?.(new Cliente(nome, +idade, id))}>
                         {id ? 'Alterar' : 'Salvar'}
                     </Botao>
-                    <Botao>
+                    <Botao onClick={props.cancelado}>
                         Cancelar
                     </Botao>
                 </div>
