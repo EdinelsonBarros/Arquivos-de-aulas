@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "@electron-forge start",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@electron-forge/cli": "^6.0.3",
     "core-js": "^3.8.3",
+    "electron": "^21.3.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {

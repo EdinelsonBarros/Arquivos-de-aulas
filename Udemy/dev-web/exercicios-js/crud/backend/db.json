@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta Bic",
+      "preço": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Notebook Mac",
+      "preço": 15000.89
+    },
+    {
+      "id": 3,
+      "name": "Samsumg S20+",
+      "preço": 5000.89
+    }
+  ]
+}

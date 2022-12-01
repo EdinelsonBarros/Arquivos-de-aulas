@@ -1,0 +1,55 @@
+{
+  "name": "most-used-words",
+  "title": "Most Used Words",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "core-js": "",
+    "vue": "",
+    "vuetify": ""
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "",
+    "@vue/cli-plugin-eslint": "",
+    "@vue/cli-service": "",
+    "babel-eslint": "",
+    "electron": "",
+    "eslint": "",
+    "eslint-plugin-vue": "",
+    "sass": "",
+    "sass-loader": "",
+    "vue-cli-plugin-electron-builder": "",
+    "vue-cli-plugin-vuetify": "",
+    "vue-template-compiler": "",
+    "vuetify-loader": ""
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
