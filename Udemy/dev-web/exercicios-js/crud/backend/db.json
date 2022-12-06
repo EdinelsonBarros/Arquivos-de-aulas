@@ -14,6 +14,21 @@
       "id": 3,
       "name": "Samsumg S20+",
       "preço": 5000.89
+    },
+    {
+      "name": "veio do formulario",
+      "price": "1.99",
+      "id": 4
+    },
+    {
+      "name": "Caneca",
+      "price": "10,00",
+      "id": 5
+    },
+    {
+      "name": "Mouse Pad",
+      "price": "24.99",
+      "id": 6
     }
   ]
 }
