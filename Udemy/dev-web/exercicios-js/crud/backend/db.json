@@ -3,32 +3,12 @@
     {
       "id": 1,
       "name": "Caneta Bic",
-      "preço": 5.89
+      "price": 10
     },
     {
       "id": 2,
       "name": "Notebook Mac",
-      "preço": 15000.89
-    },
-    {
-      "id": 3,
-      "name": "Samsumg S20+",
-      "preço": 5000.89
-    },
-    {
-      "name": "veio do formulario",
-      "price": "1.99",
-      "id": 4
-    },
-    {
-      "name": "Caneca",
-      "price": "10,00",
-      "id": 5
-    },
-    {
-      "name": "Mouse Pad",
-      "price": "24.99",
-      "id": 6
+      "price": 150.89
     }
   ]
 }
