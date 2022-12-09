@@ -1,0 +1,15 @@
+Criando BD
+CREATE DATABASE `nome do BD`
+CREATE SCHEMA `nome do BD`
+
+Deletando BD
+DROP DATABASE `no do BD`
+
+Mostrando todos BD
+SHOW DATABASES
+
+Entrando no Mysql via terminal como root
+mysql -u root -p
+
+Saindo do Mysql terminal
+quit

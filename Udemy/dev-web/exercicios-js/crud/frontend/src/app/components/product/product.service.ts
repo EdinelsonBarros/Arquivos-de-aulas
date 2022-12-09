@@ -26,7 +26,7 @@ export class ProductService {
   create(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product).pipe(
       map((obj) => obj),
-      catchError(e => this.errorHandler(e))
+      catchError((e) => this.errorHandler(e))
     )
   }
   
@@ -49,7 +49,7 @@ export class ProductService {
     const url = `${this.baseUrl}/${product.id}`
     return this.http.put<Product>(url, product).pipe(
       map((obj) => obj),
-      catchError(e => this.errorHandler(e))
+      catchError((e) => this.errorHandler(e))
     )
   }
   
