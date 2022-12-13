@@ -9,3 +9,8 @@ VALUES
     ('Alagoas', 'AL', 'Nordeste', 3.38);
     ('Amapá', 'AP', 'Norte', 1.8);
     ('Amazona', 'AM', 'Norte', 4.06);
+
+
+
+
+    
