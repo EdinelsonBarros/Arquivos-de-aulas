@@ -1,0 +1,10 @@
+db.empresas.aggregate([
+    {$match: {nome: "Bradesco"} },
+    {$lookup: {
+        from: "estados",
+        localField: "estadoId",
+        foreingField: "_id",
+        as: "Estado"
+    } },
+    {$unwind: "$estado"},
+])
