@@ -1,4 +1,3 @@
-
 const { db } = require('./.env')
 
 module.exports = {
