@@ -16,3 +16,11 @@ MOSTRAR PERMISSÕES DO DIRETORIOS
 
 	ls -la
 
+MOSTRAR IP
+	ip addr show
+
+MOSTRAR DISCOS DISPONÍVEIS
+	fdisk -l
+
+configurar o arquivo hosts
+
