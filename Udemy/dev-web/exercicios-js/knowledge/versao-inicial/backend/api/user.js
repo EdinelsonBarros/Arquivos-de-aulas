@@ -1,30 +1,31 @@
 const bcrypt = require('bcrypt-nodejs')
 
 module.exports = app => {
-    const { existsOrError, notExistsError, equalsOrError} = app.api.validation
+    const { existsOrError, notExistsOrError, equalsOrError } = app.api.validation
 
     const encryptPassword = password => {
         const salt = bcrypt.genSaltSync(10)
         return bcrypt.hashSync(password, salt)
     }
 
-    const save = async (req, res)  => {
+    const save = async (req, res) => {
         const user = { ...req.body }
         if(req.params.id) user.id = req.params.id
 
         try {
-            existsOrError(user.name, 'Nome não informado!')
-            existsOrError(user.email, 'E-mail não informado!')
-            existsOrError(user.password, 'Senha não informada!')
-            existsOrError(user.confirmPassword, 'Confirmação de senha inválida!')
-            equalsOrError(user.password, user.confirmPassword, 'Senhas não conferem!')
+            existsOrError(user.name, 'Nome não informado')
+            existsOrError(user.email, 'E-mail não informado')
+            existsOrError(user.password, 'Senha não informada')
+            existsOrError(user.confirmPassword, 'Confirmação de Senha inválida')
+            equalsOrError(user.password, user.confirmPassword,
+                'Senhas não conferem')
 
             const userFromDB = await app.db('users')
-                .where({ email: user.email}).first()
+                .where({ email: user.email }).first()
             if(!user.id) {
-                notExistsError(userFromDB, 'Usuário já cadastrado!')                
+                notExistsOrError(userFromDB, 'Usuário já cadastrado')
             }
-        } catch (msg) {
+        } catch(msg) {
             return res.status(400).send(msg)
         }
 
@@ -34,14 +35,14 @@ module.exports = app => {
         if(user.id) {
             app.db('users')
                 .update(user)
-                .where({id: user.id})
-                .then(_ => res.status(204).send())
+                .where({ id: user.id })
+                .then(_ => res.staus(204).send())
                 .catch(err => res.status(500).send(err))
         } else {
             app.db('users')
                 .insert(user)
-                .then(_=> res.status(204).send())
-                .catch(err = res.status(500).send(err))
+                .then(_ => res.status(204).send())
+                .catch(err => res.status(500).send(err))
         }
     }
 
