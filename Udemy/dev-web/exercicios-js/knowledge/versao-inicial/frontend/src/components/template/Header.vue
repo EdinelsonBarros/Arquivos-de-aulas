@@ -5,18 +5,18 @@
             <i class="fa fa-lg" :class="icon"></i>
         </a>
         <h1 class="title">
-            {{ title }}
+            <router-link to="/">{{ title }}</router-link>
         </h1>
-        <user-drop-down v-if="!hideUserDropdown" />
+        <UserDropdown v-if="!hideUserDropdown" />
     </header>
 </template>
 
 <script>
-import UserDropDown from './UserDropDwon'
+import UserDropdown from './UserDropdown'
 
 export default {
 	name: 'Header',
-    components: { UserDropDown },
+    components: { UserDropdown },
     props: {
         title: String,
         hideToggle: Boolean,
@@ -54,6 +54,11 @@ export default {
     }
 
     .title a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .title a:hover {
         color: #fff;
         text-decoration: none;
     }

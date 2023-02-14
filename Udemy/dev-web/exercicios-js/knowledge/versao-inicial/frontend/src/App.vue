@@ -1,7 +1,8 @@
 <!--Meu código-->
 <template>
 	<div id="app" :class="{'hide-menu': !isMenuVisible}">
-		<Header title="Base de conhecimento" :hideToggle="false" :hideUserDropdown="false"/>
+		<Header title="Base de Conhecimento"
+		:hideToggle="false" :hideUserDropdown="false"/>
 		<Menu />
 		<Content />
 		<Footer />
@@ -9,7 +10,7 @@
 </template>
 
 <script>
-import { mapState} from 'vuex'
+import { mapState } from "vuex"
 import Header from "@/components/template/Header"
 import Menu from "@/components/template/Menu"
 import Content from "@/components/template/Content"
@@ -21,7 +22,6 @@ export default {
 	computed: mapState(['isMenuVisible'])
 }
 </script>
-
 
 <style>
 	* {
@@ -39,12 +39,11 @@ export default {
 		height: 100vh;
 		display: grid;
 		grid-template-rows: 60px 1fr 40px;
-		grid-template-columns: 300px 1fr ;
+		grid-template-columns: 300px 1fr;
 		grid-template-areas:
 			"header header"
 			"menu content"
 			"menu footer";
-		
 	}
 
 	#app.hide-menu {
