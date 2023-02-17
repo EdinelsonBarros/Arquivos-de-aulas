@@ -7,10 +7,10 @@
                     <b-tab title="Artigos">
                         <ArcticleAdmin />
                     </b-tab>
-                    <b-tab title="Categorias">
+                    <b-tab title="Categorias" active>
                        <CategoryAdmin />
                     </b-tab>
-                    <b-tab title="Usuários" active>
+                    <b-tab title="Usuários">
                         <UserAdmin />
                     </b-tab>
                 </b-tabs>
