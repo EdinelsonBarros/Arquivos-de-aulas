@@ -4,10 +4,10 @@
         <div class="admin-pages-tab">
             <b-card no-bady>
                 <b-tabs card>
-                    <b-tab title="Artigos">
+                    <b-tab title="Artigos" active>
                         <ArcticleAdmin />
                     </b-tab>
-                    <b-tab title="Categorias" active>
+                    <b-tab title="Categorias">
                        <CategoryAdmin />
                     </b-tab>
                     <b-tab title="Usuários">
