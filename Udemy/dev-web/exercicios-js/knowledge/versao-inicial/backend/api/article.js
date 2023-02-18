@@ -35,7 +35,7 @@ module.exports = app => {
     const remove = async (req, res) => {
         try {
             const rowsDeleted = await app.db('articles')
-            //implementar validação do id - so acita números inteiros positivos.    
+            //implementar validação do id - so aceita números inteiros positivos.    
                 .where({ id: req.params.id }).del()
                 
                 try {
@@ -50,7 +50,7 @@ module.exports = app => {
         }
     }
 
-    const limit = 10 // usado para paginação
+    const limit = 5 // usado para paginação
     const get = async (req, res) => {
         const page = req.query.page || 1
 
